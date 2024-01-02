@@ -27,24 +27,25 @@
           <i class="bi bi-list"></i>
         </div>
       </label>
+      <!-- buat navbar yang pake button jadi serba popup aja -->
       <nav>
-        <a onclick="myalert()" href="#">Home</a>
-        <a onclick="myalert()" href="#">About</a>
+        <a onclick="openPopUpAbout()" href="#">About</a>
+        <a onclick="myalert()" href="#">Project</a>
         <a onclick="myalert()" href="#">Skills</a>
         <a onclick="myalert()" href="#">Contact</a>
       </nav>
     </header>
 
     <section>
+      <audio autoplay hidden loop>
+        <source src="music/backsound.mp3" type="audio/mp3" />
+      </audio>
       <div class="main">
         <div class="images">
           <div class="black-bg-outer">
             <div class="white-bg">
               <div class="blue-bg">
-                <img
-                  src="img/img.jpg"
-                  alt="image"
-                />
+                <img src="img/img.jpg" alt="image" />
               </div>
             </div>
           </div>
@@ -55,19 +56,49 @@
             <h1 class="title">FUTURE TRILLIONAIRES</h1>
           </div>
           <div class="social">
-            <a href="https://github.com/KAELGOGO"
+            <a href="https://github.com/KAELGOGO" target="_blank"
               ><i class="bi bi-github"></i
             ></a>
-            <a href="https://www.instagram.com/ka_el_jee/"
-              ><i class="bi bi-instagram"></i
+            <a href="https://www.instagram.com/ka_el_jee/" target="_blank"
+              ><i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://youtu.be/K8mahmk4MVg?si=ki-xsidqWZAIVsaf"
+              target="_blank"
+              ><i class="bi bi-music-note"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/kelvin-leandi-9529772a7/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
             ></a>
-            <a onclick="myalert()" href="#"><i class="bi bi-linkedin"></i></a>
             <a onclick="myalert()" href="#"><i class="bi bi-link"></i></a>
+          </div>
+          <div id="about" class="about">
+            <button onclick="closeAbout()">x</button>
+            <div>
+              <div class="abouthead">Kelvin Leandi</div>
+              <div class="aboutbody">
+                ---------------------------------------------------------------------------------------------
+                <br />
+                <br />
+                Hi everyone, I am a 12th grade student at SMAN 1 Manggar located
+                in East Belitung Regency, Bangka Belitung, Indonesia. I've been
+                interested in programming since I was in 10th grade and I
+                started taking it seriously in my sophomore year. The first
+                programming language I learned was C++. I learned C++ because I
+                participated in OSN which uses C++. Then I started learning Java
+                and became interested in the world of software engineers and
+                developers. My programming skills are not yet the best in the
+                world, but I will learn and continue to learn to become the best
+                in the world and develop businesses in the field of technology
+                that will open the way for me to become a trillionaire.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="logo">
-     
   </body>
 </html>
